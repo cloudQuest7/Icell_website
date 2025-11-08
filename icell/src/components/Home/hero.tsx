@@ -4,6 +4,7 @@ import { Spotlight } from '../ui/spotlight';
 import { TextHoverEffect } from '../ui/text-hover-effect'; 
 import { Cover } from '../ui/cover';
 import MetaBalls from '../ui/MetaBalls';
+import ScrollVelocity from '../ui/ScrollVelocity';
 
 const Hero = () => {
   return (
@@ -15,9 +16,9 @@ const Hero = () => {
       {/* Content layer */}
       <div className="relative z-10">
         <div className="mb-12 text-center">
-          <p className="text-sm md:text-base lg:text-lg font-medium tracking-wider text-neutral-400 uppercase">
+            <p className="text-sm md:text-base lg:text-lg font-medium tracking-wider text-neutral-200 uppercase">
             Pillai College of Engineering 
-          </p>
+            </p>
           <p className="text-base md:text-lg lg:text-lg font-medium tracking-wide text-neutral-300">
             PRESENTS
           </p>
@@ -40,8 +41,6 @@ const Hero = () => {
         fill="white"
       />
     </div>
-
-    
   );
 };
 
