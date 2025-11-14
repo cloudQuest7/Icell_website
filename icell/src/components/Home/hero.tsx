@@ -5,6 +5,7 @@ import { TextHoverEffect } from '../ui/text-hover-effect';
 import { Cover } from '../ui/cover';
 import MetaBalls from '../ui/MetaBalls';
 import ScrollVelocity from '../ui/ScrollVelocity';
+import CircularText from '../ui/CircularText';
 
 const Hero = () => {
   return (
@@ -13,12 +14,22 @@ const Hero = () => {
         <MetaBalls />
       </div>
       
+      {/* Circular Text - Top Right Corner (Tight) */}
+      <div className="absolute top-0 right-5 z-20">
+        <CircularText 
+          text="INNOVATION • CREATIVITY • TECHNOLOGY • " 
+          spinDuration={20}
+          onHover="speedUp"
+          className="text-orange-500 text-xs md:text-sm tracking-widest"
+        />
+      </div>
+      
       {/* Content layer */}
       <div className="relative z-10">
         <div className="mb-12 text-center">
-            <p className="text-sm md:text-base lg:text-lg font-medium tracking-wider text-neutral-200 uppercase">
+          <p className="text-sm md:text-base lg:text-lg font-medium tracking-wider text-neutral-200 uppercase">
             Pillai College of Engineering 
-            </p>
+          </p>
           <p className="text-base md:text-lg lg:text-lg font-medium tracking-wide text-neutral-300">
             PRESENTS
           </p>
@@ -45,3 +56,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

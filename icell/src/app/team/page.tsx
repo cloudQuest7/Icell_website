@@ -3,7 +3,7 @@
 import React from 'react';
 import LightRays from '@/components/ui/LightRays';
 import { motion } from 'framer-motion';
-import Lanyard from '@/components/ui/Lanyard';
+
 
 export default function TeamPage() {
 
