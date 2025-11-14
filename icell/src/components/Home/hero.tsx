@@ -15,7 +15,7 @@ const Hero = () => {
       </div>
       
       {/* Circular Text - Top Right Corner (Tight) */}
-      <div className="absolute top-0 right-5 z-20">
+      <div className="absolute top-3 right-5 z-20">
         <CircularText 
           text="INNOVATION • CREATIVITY • TECHNOLOGY • " 
           spinDuration={20}
